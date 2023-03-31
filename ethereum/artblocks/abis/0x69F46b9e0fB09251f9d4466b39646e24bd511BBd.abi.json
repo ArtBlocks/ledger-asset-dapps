@@ -19,19 +19,282 @@
     "anonymous": false,
     "inputs": [
       {
-        "indexed": false,
+        "indexed": true,
         "internalType": "uint256",
-        "name": "_minimumPriceDecayHalfLifeSeconds",
+        "name": "_projectId",
         "type": "uint256"
       },
       {
         "indexed": false,
+        "internalType": "bytes32",
+        "name": "_key",
+        "type": "bytes32"
+      }
+    ],
+    "name": "ConfigKeyRemoved",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
         "internalType": "uint256",
-        "name": "_maximumPriceDecayHalfLifeSeconds",
+        "name": "_projectId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "_key",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_value",
         "type": "uint256"
       }
     ],
-    "name": "AuctionHalfLifeRangeSecondsUpdated",
+    "name": "ConfigValueAddedToSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "_projectId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "_key",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_value",
+        "type": "address"
+      }
+    ],
+    "name": "ConfigValueAddedToSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "_projectId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "_key",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "_value",
+        "type": "bytes32"
+      }
+    ],
+    "name": "ConfigValueAddedToSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "_projectId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "_key",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_value",
+        "type": "uint256"
+      }
+    ],
+    "name": "ConfigValueRemovedFromSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "_projectId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "_key",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_value",
+        "type": "address"
+      }
+    ],
+    "name": "ConfigValueRemovedFromSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "_projectId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "_key",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "_value",
+        "type": "bytes32"
+      }
+    ],
+    "name": "ConfigValueRemovedFromSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "_projectId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "_key",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "_value",
+        "type": "bool"
+      }
+    ],
+    "name": "ConfigValueSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "_projectId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "_key",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_value",
+        "type": "uint256"
+      }
+    ],
+    "name": "ConfigValueSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "_projectId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "_key",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_value",
+        "type": "address"
+      }
+    ],
+    "name": "ConfigValueSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "_projectId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "_key",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "_value",
+        "type": "bytes32"
+      }
+    ],
+    "name": "ConfigValueSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_minimumAuctionLengthSeconds",
+        "type": "uint256"
+      }
+    ],
+    "name": "MinimumAuctionLengthSecondsUpdated",
     "type": "event"
   },
   {
@@ -89,6 +352,25 @@
       },
       {
         "indexed": false,
+        "internalType": "uint256",
+        "name": "_maxInvocations",
+        "type": "uint256"
+      }
+    ],
+    "name": "ProjectMaxInvocationsLimitUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "_projectId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
         "internalType": "bool",
         "name": "_purchaseToDisabled",
         "type": "bool"
@@ -128,7 +410,7 @@
       {
         "indexed": false,
         "internalType": "uint256",
-        "name": "_priceDecayHalfLifeSeconds",
+        "name": "_auctionTimestampEnd",
         "type": "uint256"
       },
       {
@@ -196,20 +478,38 @@
   },
   {
     "inputs": [],
-    "name": "maximumPriceDecayHalfLifeSeconds",
+    "name": "isEngine",
     "outputs": [
       {
-        "internalType": "uint256",
+        "internalType": "bool",
         "name": "",
-        "type": "uint256"
+        "type": "bool"
       }
     ],
     "stateMutability": "view",
     "type": "function"
   },
   {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_projectId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_maxInvocations",
+        "type": "uint256"
+      }
+    ],
+    "name": "manuallyLimitProjectMaxInvocations",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
     "inputs": [],
-    "name": "minimumPriceDecayHalfLifeSeconds",
+    "name": "minimumAuctionLengthSeconds",
     "outputs": [
       {
         "internalType": "uint256",
@@ -250,7 +550,7 @@
     "inputs": [
       {
         "internalType": "uint256",
-        "name": "",
+        "name": "_projectId",
         "type": "uint256"
       }
     ],
@@ -263,7 +563,7 @@
       },
       {
         "internalType": "uint256",
-        "name": "priceDecayHalfLifeSeconds",
+        "name": "timestampEnd",
         "type": "uint256"
       },
       {
@@ -288,6 +588,50 @@
         "type": "uint256"
       }
     ],
+    "name": "projectConfig",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "maxHasBeenInvoked",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint24",
+        "name": "maxInvocations",
+        "type": "uint24"
+      },
+      {
+        "internalType": "uint64",
+        "name": "timestampStart",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint64",
+        "name": "timestampEnd",
+        "type": "uint64"
+      },
+      {
+        "internalType": "uint256",
+        "name": "startPrice",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "basePrice",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_projectId",
+        "type": "uint256"
+      }
+    ],
     "name": "projectMaxHasBeenInvoked",
     "outputs": [
       {
@@ -303,7 +647,7 @@
     "inputs": [
       {
         "internalType": "uint256",
-        "name": "",
+        "name": "_projectId",
         "type": "uint256"
       }
     ],
@@ -364,30 +708,55 @@
   {
     "inputs": [
       {
+        "internalType": "address",
+        "name": "_to",
+        "type": "address"
+      },
+      {
         "internalType": "uint256",
         "name": "_projectId",
         "type": "uint256"
       }
     ],
-    "name": "resetAuctionDetails",
-    "outputs": [],
-    "stateMutability": "nonpayable",
+    "name": "purchaseTo_do6",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "payable",
     "type": "function"
   },
   {
     "inputs": [
       {
         "internalType": "uint256",
-        "name": "_minimumPriceDecayHalfLifeSeconds",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "_maximumPriceDecayHalfLifeSeconds",
+        "name": "_projectId",
         "type": "uint256"
       }
     ],
-    "name": "setAllowablePriceDecayHalfLifeRangeSeconds",
+    "name": "purchase_H4M",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_projectId",
+        "type": "uint256"
+      }
+    ],
+    "name": "resetAuctionDetails",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"
@@ -406,7 +775,7 @@
       },
       {
         "internalType": "uint256",
-        "name": "_priceDecayHalfLifeSeconds",
+        "name": "_auctionTimestampEnd",
         "type": "uint256"
       },
       {
@@ -421,6 +790,19 @@
       }
     ],
     "name": "setAuctionDetails",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_minimumAuctionLengthSeconds",
+        "type": "uint256"
+      }
+    ],
+    "name": "setMinimumAuctionLengthSeconds",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"
