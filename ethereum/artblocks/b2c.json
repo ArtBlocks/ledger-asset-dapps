@@ -195,7 +195,7 @@
             }
         },
         {
-            "address": "0x5F3562610dEDE0120087ec20BB61CF4A66124416",
+            "address": "0x5f3562610dede0120087ec20bb61cf4a66124416",
             "contractName": "MinterMerkleV5",
             "selectors": {
                 "0x891407c0": {
@@ -243,7 +243,7 @@
             }
         },
         {
-            "address": "0x69326faf88ed5B423a7fC4063Fc814bfb451fEd6",
+            "address": "0x69326faf88ed5b423a7fc4063fc814bfb451fed6",
             "contractName": "MinterHolderV4",
             "selectors": {
                 "0x891407c0": {
@@ -259,7 +259,7 @@
             }
         },
         {
-            "address": "0x69F46b9e0fB09251f9d4466b39646e24bd511BBd",
+            "address": "0x69f46b9e0fb09251f9d4466b39646e24bd511bbd",
             "contractName": "MinterDALinV4",
             "selectors": {
                 "0x891407c0": {
@@ -275,7 +275,7 @@
             }
         },
         {
-            "address": "0x6D136683CF43aF32387321A9b338809549dB0d9C",
+            "address": "0x6d136683cf43af32387321a9b338809549db0d9c",
             "contractName": "MinterSetPriceERC20V4",
             "selectors": {
                 "0x891407c0": {
@@ -307,7 +307,7 @@
             }
         },
         {
-            "address": "0x9DA0aA1ECec6Aa824Fe67E3a19b1cA6a7045356F",
+            "address": "0x9da0aa1ecec6aa824fe67e3a19b1ca6a7045356f",
             "contractName": "MinterSetPriceV4",
             "selectors": {
                 "0x891407c0": {
